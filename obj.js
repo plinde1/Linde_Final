@@ -1,5 +1,5 @@
 var myStuff = {
-    "Angeles":{city:"Los Angeles", state: "California", stadium:"Angel Stadium", sport:"MLB", "coord":[-117.8825,33.80046]},
+"Angeles":{city:"Los Angeles", state: "California", stadium:"Angel Stadium", sport:"MLB", "coord":[-117.8825,33.80046]},
 "Astros":{city:"Houston", state: "Texas", stadium:"Minute Maid Park", sport:"MLB", "coord":[-95.35518,29.7572]},
 "Athletics":{city:"Las Vegas", state: "Nevada", stadium:"Sutter Health Park", sport:"MLB", "coord":[-122.20052,37.75162]},
 "Blue Jays":{city:"Toronto", state: "Canada", stadium:"Rogers Centre", sport:"MLB", "coord":[-79.38917,43.6414]},
