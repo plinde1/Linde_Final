@@ -90,6 +90,7 @@ require([
                                 <br> City: ${value.city} <br><br>
                                 State: ${value.state} <br><br>
                                 Stadium: ${value.stadium} <br><br>
+                                Sport: ${value.sport} <br><br>
                             `
                         }
                     });
