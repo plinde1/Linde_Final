@@ -89,7 +89,6 @@ require([
                             content: `
                                 <br> City: ${value.city} <br><br>
                                 State: ${value.state} <br><br>
-                                Coordinates: ${value.coord[0]},${value.coord[1]} <br><br>
                                 Stadium: ${value.stadium} <br><br>
                             `
                         }
