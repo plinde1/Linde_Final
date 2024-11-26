@@ -55,9 +55,20 @@ require([
             const graphicsLayer = new GraphicsLayer();
             map.add(graphicsLayer);
 
+            const sportColors = {
+                MLB: [0, 255, 0],
+                NFL: [0, 0, 255],
+                NHL: [255, 0, 0],
+                NBA: [255, 165, 0],
+                MLS: [0, 128, 0],
+                PWHL: [255, 20, 147],
+                NWSL: [255, 105, 180],
+                WNBA: [138, 43, 226]
+            };
 
             const initMap = function() {
                 for (const [key, value] of Object.entries(myStuff)) {
+                    let sportColor = sportColors[value.sport];
                     const point = new Point({
                         x: value.coord[0],
                         y: value.coord[1],
@@ -67,7 +78,7 @@ require([
 
                     const markerSymbol = new SimpleMarkerSymbol({
                         style: "diamond",
-                        color: [0, 255, 255],
+                        color: sportColor,
                         outline: {
                             color: [0, 0, 0],
                             width: 2
