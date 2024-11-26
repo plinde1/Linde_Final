@@ -55,6 +55,7 @@ require([
             const graphicsLayer = new GraphicsLayer();
             map.add(graphicsLayer);
 
+
             const initMap = function() {
                 for (const [key, value] of Object.entries(myStuff)) {
                     const point = new Point({
