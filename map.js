@@ -55,14 +55,6 @@ require([
             const graphicsLayer = new GraphicsLayer();
             map.add(graphicsLayer);
 
-            const cities = {
-                "Laramie": { coord: [-105.598927, 41.306380] },
-                "Atlanta": { coord: [-84.412595, 33.765545] },
-                "Cheyenne": { coord: [-104.80999, 41.14638] },
-                "Juneau": { coord: [-134.462813, 58.499564] },
-                "Island Of Hawai'i": { coord: [-155.228528, 19.324689] }
-            };
-
             const initMap = function() {
                 for (const [key, value] of Object.entries(myStuff)) {
                     const point = new Point({
