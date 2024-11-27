@@ -127,7 +127,7 @@ require([
                         if (graphic) {
                             view.goTo({
                                 target: graphic.geometry,
-                                zoom: 10
+                                zoom: 15
                             });
                         }
                     });
