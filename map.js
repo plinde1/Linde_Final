@@ -9,9 +9,10 @@ require([
     "esri/geometry/Point",
     "esri/symbols/SimpleMarkerSymbol",
     "esri/widgets/Search",
-    "esri/smartMapping/labels/clusters"
+    "esri/smartMapping/labels/clusters",
+    "esri/widgets/Legend"
     
-], function(Map, Graphic, GraphicsLayer, ElevationLayer, SceneView, Point, SimpleMarkerSymbol, Search) {
+], function(Map, Graphic, GraphicsLayer, ElevationLayer, SceneView, Point, SimpleMarkerSymbol, Search, Legend) {
     $(document).ready(function() {
         Main = (function() {
             let layer = new ElevationLayer({
@@ -162,9 +163,20 @@ require([
                     });
                 });
             };
+          const createLegendWidget = function() {
+                const legend = new Legend({
+                    view: view,
+                    layerInfos: [{
+                        layer: graphicsLayer,
+                        title: "Sports Teams"
+                    }]
+                });
+                view.ui.add(legend, "top-right");
+            };
 
             createSearchWidget();
             initMap();
+            createLegendWidget();
 
             return {};
         })();
