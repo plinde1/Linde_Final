@@ -171,7 +171,7 @@ require([
                         title: "Sports Teams"
                     }]
                 });
-                view.ui.add(legend, "top-right");
+                view.ui.add(legend, "bottom-right");
             };
 
             createSearchWidget();
