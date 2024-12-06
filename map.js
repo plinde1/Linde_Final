@@ -72,12 +72,11 @@ require([
                     const point = new Point({
                         x: value.coord[0],
                         y: value.coord[1],
-                        z: 10000,
                         spatialReference: { wkid: 4326 }
                     });
 
                     const markerSymbol = new SimpleMarkerSymbol({
-                        style: "diamond",
+                        style: "circle",
                         color: sportColor,
                         outline: {
                             color: [0, 0, 0],
